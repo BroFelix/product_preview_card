@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display&display=swap');
+
+.card {
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.image {
+    display: inline-block;
+
+}
+
+.image img {
+    height: 100px;
+    max-width: 50px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pre-title {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', regular;
+    color: hsl(228, 12%, 48%);
+}
+
+.attribution {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
