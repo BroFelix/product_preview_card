@@ -1,42 +1,244 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Red+Hat+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Red+Hat+Display&display=swap');
 
-.card {
-    border-radius: 15px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+:root {
+    background-color: hsl(30, 38%, 92%);
 }
 
-.image {
-    display: inline-block;
-
+main {
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
-.image img {
-    height: 100px;
-    max-width: 50px;
+@media screen and (min-width:1440px) {
+    .card {
+        float: center;
+        position: relative;
+        margin: 12.5% auto;
+        border-radius: 15px;
+        display: flex;
+        height: 28.125rem;
+        width: 37.5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        height: 100%;
+        width: 50%;
+        flex-grow: 1;
+        display: inline-block;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .image img {
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .main-content {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .pre-title {
+        color: hsl(228, 12%, 48%);
+        margin: 2rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        font-family: 'Montserrat', regular;
+    }
+
+    .title {
+        color: hsl(212, 21%, 14%);
+        margin: 0 0 0 1.5rem;
+        font-family: 'Fraunces', regular;
+        font-size: 2rem;
+    }
+
+    .description {
+        margin-left: 1.5rem;
+        color: hsl(228, 12%, 48%);
+        font-family: 'Montserrat', regular;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    #price-container {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .current-price {
+        color: hsl(158, 36%, 37%);
+        font-size: 1.8rem;
+        font-family: 'Fraunces', regular;
+
+    }
+
+    .previous-price {
+        margin-left: 1rem;
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+        font-size: 0.875rem;
+        font-family: 'Montserrat', regular;
+    }
+
+    .button-style {
+        border: none;
+        border-radius: 10px;
+        color: hsl(0, 0%, 100%);
+        padding: 8px;
+        margin: 1.5rem 1.5rem;
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-style:hover {
+        background-color: #243f32
+    }
+
+    .button-style .icon {
+        background: url("images/icon-cart.svg") no-repeat;
+        float: center;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.25rem;
+    }
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 1440px) {
+    .card {
+        float: center;
+        position: relative;
+        margin: 12.5% auto;
+        border-radius: 15px;
+        display: flex;
+        height: 40.625rem;
+        width: 21.875rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.pre-title {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Montserrat', regular;
-    color: hsl(228, 12%, 48%);
+    .image {
+        height: 40%;
+        width: 100%;
+        flex-grow: 1;
+        display: inline-block;
+    }
+
+    .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .main-content {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .pre-title {
+        color: hsl(228, 12%, 48%);
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        font-family: 'Montserrat', regular;
+    }
+
+    .title {
+        color: hsl(212, 21%, 14%);
+        margin: 0 0 0 1.5rem;
+        font-size: 2rem;
+        font-family: 'Fraunces', regular;
+    }
+
+    .description {
+        margin-left: 1.5rem;
+        color: hsl(228, 12%, 48%);
+        font-family: 'Montserrat', regular;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    #price-container {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .current-price {
+        color: hsl(158, 36%, 37%);
+        font-size: 1.8rem;
+        font-family: 'Fraunces', regular;
+
+    }
+
+    .previous-price {
+        margin-left: 1rem;
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+        font-size: 0.875rem;
+        font-family: 'Montserrat', regular;
+    }
+
+    .button-style {
+        border: none;
+        border-radius: 10px;
+        color: hsl(0, 0%, 100%);
+        padding: 0.5rem;
+        margin: 1.5rem 1.5rem;
+        background-color: hsl(158, 36%, 37%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-style:hover {
+        background-color: #243f32
+    }
+
+    .button-style .icon {
+        background: url("images/icon-cart.svg") no-repeat;
+        float: center;
+        height: 1rem;
+        width: 1rem;
+        margin-right: 0.25rem;
+    }
 }
 
 .attribution {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    position: absolute;
+    position: relative;
     font-size: 11px;
     text-align: center;
 }
