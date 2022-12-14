@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution is URL here](https://github.com/Farrukh997/product_preview_card)
-- Live Site URL: [live site is URL here](https://farrukh997.github.io/product_preview_card/)
+- Solution URL: [solution URL is here](https://github.com/Farrukh997/product_preview_card)
+- Live Site URL: [live site URL is here](https://farrukh997.github.io/product_preview_card/)
 
 ## My process
 
