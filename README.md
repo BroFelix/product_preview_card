@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./images/image-product-desktop.jpg.jpg)
+![Screenshot](./images/image-product-desktop.jpg)
 
 ### Links
 
